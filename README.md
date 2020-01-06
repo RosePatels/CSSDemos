@@ -24,7 +24,7 @@ Each demo will have a button that a user can click on to see the code that was u
 
 ## Wireframes
 
-
+![Wireframe for each animation](wireframe.jpg)
 
 ## Architecture and Technology
 * CSS and JavaScript
