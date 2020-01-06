@@ -1,0 +1,40 @@
+.button-background-animations {
+    padding: 20px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.button-background-header {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.button-background-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.animated-button {
+    background: #f6f7f4;
+    border: 1px solid #ebece9;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgb(199, 199, 199);
+    font-weight: 500;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.left-to-right:hover {
+  animation-name: left_to_right;
+}
+
+@keyframes left_to_right{
+ 
+}
