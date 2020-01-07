@@ -19,20 +19,8 @@
     grid-gap: 40px;
 }
 
-.animated-button {
-    background: #f6f7f4;
-    border: 1px solid #ebece9;
-    padding: 20px 30px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 10px rgb(199, 199, 199);
-    font-weight: 500;
-    font-size: 15px;
-    outline: none;
-    cursor: pointer;
-}
-
 .left-to-right {
-    background: linear-gradient(to left, transparent 50%, #0A9C80 50%);
+    background: linear-gradient(to left, #f6f7f4 50%, #0A9C80 50%);
     border: 1px solid #ebece9;
     padding: 20px 30px;
     border-radius: 5px;
@@ -53,7 +41,7 @@
 
 
 .right-to-left {
-    background: linear-gradient(to right, transparent 50%, #0A9C80 50%);
+    background: linear-gradient(to right, #f6f7f4 50%, #0A9C80 50%);
     border: 1px solid #ebece9;
     padding: 20px 30px;
     border-radius: 5px;
@@ -70,4 +58,41 @@
 .right-to-left:hover{
     background-position: 100% 0;
     color: #f7f8f4;
+}
+
+.top-to-bottom {
+    background: #f6f7f4;
+    border: 1px solid #ebece9;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgb(199, 199, 199);
+    font-weight: 500;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: .7s ease-out;
+}
+
+.top-to-bottom::after{
+    content: "";
+    background: #0A9C80;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: height .7s ease-out;
+    z-index: -1;
+}
+
+.top-to-bottom:hover{
+    color: white;
+}
+
+.top-to-bottom:hover::after{
+    height: 100%;
 }
