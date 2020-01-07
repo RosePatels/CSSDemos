@@ -72,20 +72,21 @@
     cursor: pointer;
     position: relative;
     z-index: 1;
-    transition: .7s ease-out;
+    transition: .5s ease-out;
 }
 
 .top-to-bottom::after{
     content: "";
     background: #0A9C80;
     position: absolute;
+    border-radius: 5px;
     top: 0;
     width: 100%;
     height: 0%;
     bottom: 0;
     left: 0;
     right: 0;
-    transition: height .7s ease-out;
+    transition: height .5s ease-out;
     z-index: -1;
 }
 
@@ -95,4 +96,43 @@
 
 .top-to-bottom:hover::after{
     height: 100%;
+}
+
+.bottom-to-top{
+    background: #0A9C80;
+    border: 1px solid #ebece9;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgb(199, 199, 199);
+    font-weight: 500;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    transition: .5s ease-out;
+}
+
+.bottom-to-top::after{
+    content: "";
+    background: #f6f7f4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all .5s ease-out;
+    z-index: -1;
+}
+
+.bottom-to-top:hover {
+    color: white;
+    border-radius: 5px;
+}
+
+.bottom-to-top:hover::after{
+    height: 0%;
+    border-radius: 5px;
 }
