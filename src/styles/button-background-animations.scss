@@ -31,10 +31,22 @@
     cursor: pointer;
 }
 
-.left-to-right:hover {
-  animation-name: left_to_right;
+.left-to-right {
+    background: linear-gradient(to left, transparent 50%, #0A9C80 50%);
+    border: 1px solid #ebece9;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgb(199, 199, 199);
+    font-weight: 500;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: .7s;
+    background-size: 200% 100%;
+    background-position: 100% 0;
 }
 
-@keyframes left_to_right{
- 
+.left-to-right:hover{
+    background-position: 0 0;
+    color: #f7f8f4;
 }
