@@ -11,18 +11,23 @@ window.addEventListener("DOMContentLoaded", () => {
     let tileTiltCard = document.querySelector('.tile-tilt');
 
     function tilt(event){
-        console.log(event);
-        // console.log(event.screenX + "    " + event.screenY);
-        // console.log(tileContainer.offsetWidth);
-        // console.log(tileContainer.offsetHeight);
-        // console.log(this, event.target);
-        // const gap = 80;
-        let xgap = (event.screenX / tileContainer.offsetWidth/3);
-        let ygap = (-event.screenY / tileContainer.offsetHeight/3);
 
-        // let xgap = (event.momementX);
-        // let ygap = (event.movementY);
-        tileTiltCard.style.transform = `rotateX(${xgap}deg) rotateY(${ygap}deg)`;
+        let offsetXReset = event.offsetX - 425;
+        let offsetYReset = event.offsetY - 200;
+        let xgap = ((offsetXReset)/ tileContainer.offsetWidth);
+        let ygap = ((offsetYReset)/ tileContainer.offsetHeight);
+
+        if (offsetXReset >= 0 && offsetYReset <= 0){
+            tileTiltCard.style.transform = `rotateX(${-xgap}deg) rotateY(${ygap}deg)`;
+        } else if (offsetXReset <= 0 && offsetYReset <= 0){
+            tileTiltCard.style.transform = `rotateX(${xgap}deg) rotateY(${-ygap}deg)`;
+        } else if (offsetXReset <= 0 && offsetYReset >= 0){
+            tileTiltCard.style.transform = `rotateX(${-xgap}deg) rotateY(${ygap}deg)`;
+        } else if (offsetXReset >= 0 && offsetYReset >= 0){
+            tileTiltCard.style.transform = `rotateX(${xgap}deg) rotateY(${-ygap}deg)`;
+        }
+
+
     }
     tileContainer.addEventListener('mousemove', tilt);
 });
