@@ -13,64 +13,66 @@
     <nav>
       <h1 class="demos-title">CSS Demos</h1>
     </nav>
-    <section class="flip-card-animations">
-      <h2 class="button-background-header">Flip Card Animations</h2>
-      <div class="flip-cards-grid">
-      <div class="flip-card-container">
-          <div class="flip-card flip-card-y-left">
-            <div class="front-face">
-              <h2>Rotate Y</h2>
-            </div>
-            <div class="back-face back-face-y-left">
-              <h2>Test</h2>
-            </div>
-          </div>
-        </div>
+    <section class="flip-card-animations-parallax">
+      <section class="flip-card-animations">
+        <h2 class="button-background-header">Flip Card Animations</h2>
+        <div class="flip-cards-grid">
         <div class="flip-card-container">
-          <div class="flip-card flip-card-x-left">
-            <div class="front-face">
-              <h2>Rotate X</h2>
+            <div class="flip-card flip-card-y-left">
+              <div class="front-face">
+                <h2>Rotate Y</h2>
+              </div>
+              <div class="back-face back-face-y-left">
+                <h2>Test</h2>
+              </div>
             </div>
-            <div class="back-face back-face-x-left">
-              <h2>Back Face Test</h2>
+          </div>
+          <div class="flip-card-container">
+            <div class="flip-card flip-card-x-left">
+              <div class="front-face">
+                <h2>Rotate X</h2>
+              </div>
+              <div class="back-face back-face-x-left">
+                <h2>Back Face Test</h2>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card-container">
+            <div class="flip-card flip-card-z-left">
+              <div class="front-face">
+                <h2>Rotate Z</h2>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card-container">
+            <div class="flip-card flip-card-y-right">
+              <div class="front-face">
+                <h2>Rotate Y</h2>
+              </div>
+              <div class="back-face back-face-y-right">
+                <h2>Back Face Test</h2>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card-container">
+            <div class="flip-card flip-card-x-right">
+              <div class="front-face">
+                <h2>Rotate X</h2>
+              </div>
+              <div class="back-face back-face-x-right">
+                <h2>Back Face Test</h2>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card-container">
+            <div class="flip-card flip-card-z-right">
+              <div class="front-face">
+                <h2>Rotate Z</h2>
+              </div>
             </div>
           </div>
         </div>
-        <div class="flip-card-container">
-          <div class="flip-card flip-card-z-left">
-            <div class="front-face">
-              <h2>Rotate Z</h2>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card-container">
-          <div class="flip-card flip-card-y-right">
-            <div class="front-face">
-              <h2>Rotate Y</h2>
-            </div>
-            <div class="back-face back-face-y-right">
-              <h2>Back Face Test</h2>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card-container">
-          <div class="flip-card flip-card-x-right">
-            <div class="front-face">
-              <h2>Rotate X</h2>
-            </div>
-            <div class="back-face back-face-x-right">
-              <h2>Back Face Test</h2>
-            </div>
-          </div>
-        </div>
-        <div class="flip-card-container">
-          <div class="flip-card flip-card-z-right">
-            <div class="front-face">
-              <h2>Rotate Z</h2>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     </section>
     <section class="button-background-animations">
       <h2 class="button-background-header">Button Background Animations</h2>
@@ -88,11 +90,26 @@
       <h2 class="tile-tilt-header">Tile Tilt Animation</h2>
       <div class="tile-tilt-container">
         <div class="tile-tilt">
+          <img src="src/images/old_ship.jpg" alt="Old Ship">
         </div>
       </div>
     </section>
     <section class="image-overlay-animations">
       <h2 class="image-overlay-header">Image Overlay Animations</h2>
+      <div class="img-grid">
+        <div class="nature-pic">
+          <img src="src/images/beautiful_pic.jpg" alt="nature picture">
+          <div class="nature-pic-hover">Hello World</div>
+        </div>
+        <div class="temple-pic-container">
+          <img src="src/images/georgian.jpg" alt="temple pic" class="temple-pic">
+          <div class="temple-pic-hover">Does this work?</div>
+        </div>
+        <img src="src/images/flower.jpg" alt="flower" class="flower-pic">
+      </div>
+      <!-- <div class="spotlight-img-container">
+        <img src="src/images/colorful-art.jpg" alt="Canvas Colorful Art" class="spotlight-img">
+      </div> -->
     </section>
     <script src="./dist/main.js"></script>
   </body>

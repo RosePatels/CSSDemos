@@ -31,3 +31,9 @@
     box-shadow: 3px 3px 10px rgb(199, 199, 199);
     transition: transform .1s;
 }
+
+.tile-tilt img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}

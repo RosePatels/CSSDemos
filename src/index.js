@@ -31,4 +31,16 @@ window.addEventListener("DOMContentLoaded", () => {
 
     }
     tileContainer.addEventListener('mousemove', tilt);
+
+    //img spotlight cursor animation
+
+    let spotlightImg = document.querySelector('.spotlight-img');
+
+
+    function spotlight(event){
+        
+    }
+
+    spotlightImg.addEventListener('mousemove', spotlight);
+
 });
