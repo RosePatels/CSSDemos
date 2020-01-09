@@ -1,8 +1,9 @@
 import "./styles/reset.scss";
-import "./styles/index.scss";
 import "./styles/button-background-animations.scss";
 import "./styles/flip-card-animations.scss";
 import "./styles/tile-tilt-animations.scss";
+import "./styles/image-overlay-animations.scss";
+import "./styles/index.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
 
