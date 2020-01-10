@@ -14,3 +14,22 @@
     font-size: 20px;
 }
 
+.static-words {
+    display: inline;
+    padding-right: 5px;
+}
+
+.rotating-words {
+    display: inline;
+}
+
+.rotating-words span {
+    opacity: 1;
+    position: absolute;
+}
+
+.rotating-animation {
+    transform: translate(-30%);
+    opacity: 1;
+    transition: all .5s;
+}
