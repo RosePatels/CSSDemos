@@ -3,6 +3,7 @@ import "./styles/button-background-animations.scss";
 import "./styles/flip-card-animations.scss";
 import "./styles/tile-tilt-animations.scss";
 import "./styles/image-overlay-animations.scss";
+import "./styles/text-animations.scss";
 import "./styles/index.scss";
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -34,13 +35,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
     //img spotlight cursor animation
 
-    let spotlightImg = document.querySelector('.spotlight-img');
+    // let spotlightImg = document.querySelector('.spotlight-img');
 
 
-    function spotlight(event){
+    // function spotlight(event){
         
-    }
+    // }
 
-    spotlightImg.addEventListener('mousemove', spotlight);
+    // spotlightImg.addEventListener('mousemove', spotlight);
 
 });
