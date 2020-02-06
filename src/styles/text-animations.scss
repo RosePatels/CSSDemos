@@ -14,6 +14,11 @@
     font-size: 20px;
 }
 
+.rotating-words-animation {
+    margin: 0 auto;
+    
+}
+
 .static-words {
     display: inline;
     padding-right: 5px;
@@ -21,15 +26,47 @@
 
 .rotating-words {
     display: inline;
+    position: relative;
+    transform: translateY(-50%); 
 }
 
 .rotating-words span {
-    opacity: 1;
     position: absolute;
+    width: 100%;
+    opacity: 0;
+    animation: rotate-words 2s cubic-bezier(0.24, 0.57, 0, 1.38) infinite;
 }
 
-.rotating-animation {
-    transform: translate(-30%);
-    opacity: 1;
-    transition: all .5s;
+@keyframes rotate-words {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.rotating-words span:nth-child(1){
+    animation-delay: 0s;
+}
+
+.rotating-words span:nth-child(2){
+    animation-delay: 2s;
+}
+
+.rotating-words span:nth-child(3){
+    animation-delay: 4s;
+}
+
+.rotating-words span:nth-child(4){
+    animation-delay: 6s;
+}
+
+.rotating-words span:nth-child(5){
+    animation-delay: 8s;
 }
