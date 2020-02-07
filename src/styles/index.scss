@@ -7,6 +7,10 @@ nav{
   background: #272932;
   height: 175px;
   text-align: center;
+  position: relative;
+}
+
+.demos-title-container {
   display: flex;
   justify-content: center;
 }
@@ -40,4 +44,15 @@ nav{
   100%{
     transform: rotateY(-6deg);
   }
+}
+
+
+.navbar-portfolio-links {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
