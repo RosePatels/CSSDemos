@@ -16,25 +16,32 @@
 
 .rotating-words-animation {
     margin: 0 auto;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .static-words {
     display: inline;
     padding-right: 5px;
+    font-size: 40px;
 }
 
 .rotating-words {
-    display: inline;
-    position: relative;
-    transform: translateY(-50%); 
+    display: flex;
+    align-items: center;
 }
 
 .rotating-words span {
     position: absolute;
-    width: 100%;
     opacity: 0;
     animation: rotate-words 12s linear infinite;
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to left, #00f260, #0575e6);
+    background-clip: text;
+    color: transparent;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 @keyframes rotate-words {
