@@ -7,7 +7,8 @@ nav{
   background: #272932;
   height: 175px;
   text-align: center;
-
+  display: flex;
+  justify-content: center;
 }
 
 .demos-title{
@@ -18,12 +19,12 @@ nav{
     font-size: 90px;
     letter-spacing: 5px;
     text-shadow: 4px 4px 0 #193c4b, 6px 6px 0 #92d4a6, 9px 9px 0 #70c089, 12px 12px 0 #4e8a61, 15px 15px 0 #2a728f, 18px 18px 0 #0e4961;
+    transition: .17s;
+    padding-right: 10px;
 }
 
 .demos-title:hover{
-  animation-duration: 3s;
-  animation-name: header-animation;
-  animation-iteration-count: infinite;
+  transform: scale(1.3) rotate(-3deg);
 }
 
 @keyframes header-animation{
