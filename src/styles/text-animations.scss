@@ -34,16 +34,28 @@
     position: absolute;
     width: 100%;
     opacity: 0;
-    animation: rotate-words 2s cubic-bezier(0.24, 0.57, 0, 1.38) infinite;
+    animation: rotate-words 12s linear infinite;
 }
 
 @keyframes rotate-words {
     0% {
         opacity: 0;
+        transform: translateY(-5px);
     }
 
-    50% {
+    2% {
         opacity: 1;
+        transform: translateY(0px);
+    }
+
+    14% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    16% {
+        opacity: 0;
+        transform: translateY(5px);
     }
 
     100% {
@@ -69,4 +81,12 @@
 
 .rotating-words span:nth-child(5){
     animation-delay: 8s;
+}
+
+.rotating-words span:nth-child(6){
+    animation-delay: 10s;
+}
+
+.rotate-word-animation {
+    animation: rotate-words 2s linear;
 }

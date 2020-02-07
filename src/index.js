@@ -44,4 +44,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // spotlightImg.addEventListener('mousemove', spotlight);
 
+    // let rotation = document.getElementsByClassName('rotate-word');
+    // for(let i = 0; i < rotation.length; i++){
+    //     rotation[i].classList.add('rotate-word-animation')
+    // }
+
 });
