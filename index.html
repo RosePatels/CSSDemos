@@ -12,8 +12,48 @@
 
   <body>
     <nav>
-      <h1 class="demos-title">CSS Demos</h1>
+      <div class="demos-title-container">
+        <h2 class="demos-title">C</h2>
+        <h2 class="demos-title">S</h2>
+        <h2 class="demos-title">S</h2>
+        <h2 class="demos-title"> </h2>
+        <h2 class="demos-title">D</h2>
+        <h2 class="demos-title">e</h2>
+        <h2 class="demos-title">m</h2>
+        <h2 class="demos-title">o</h2>
+        <h2 class="demos-title">s</h2>
+      </div>
+      <ul class="navbar-portfolio-links">
+        <li><a href="https://www.shreejpatel.com" target="_blank" className="navbar-portfolio-link">Portfolio</a></li>
+        <li><a href="https://github.com/ShreePatel95" target="_blank" className="navbar-portfolio-link">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/shree1795/" target="_blank" className="navbar-portfolio-link">LinkedIn</a>
+        </li>
+        <li><a href="https://angel.co/shree-patel" target="_blank" className="navbar-portfolio-link">Angel List</a></li>
+      </ul>
     </nav>
+    <section class="intro-cssdemos">
+      <p>CSS Demos is a fun and interactive site that explores the possibilites of CSS. Although CSS by itself can accomplish interesting animations, coupled with Javascript, we can gain more control over how we want to change the element and produce even cooler effects! A majority of the animations on this site react to the user's mouse so be sure to hover over the animations to see the effects take place.</p>
+    </section>
+    <section class="text-animations">
+      <h2 class="text-header">Text Animations</h2>
+      <!-- Rotating animation created with the help of: https://www.youtube.com/watch?v=1gJMYJmYWU8 -->
+      <div class="text-animations-grid">
+        <div class="rotating-words-animation">
+          <div class="static-words">Hello</div>
+          <div class="rotating-words">
+            <span class="rotate-word">World!</span>
+            <span class="rotate-word">Planet!</span>
+            <span class="rotate-word">Earth!</span>
+            <span class="rotate-word">Globe!</span>
+            <span class="rotate-word">Galaxy!</span>
+            <span class="rotate-word">Universe!</span>
+          </div>
+        </div>
+        <h2 class="typewriter-static">Hello <div id="typewriter"></div>
+        </h2>
+      </div>
+    </section>
+
     <section class="flip-card-animations-parallax">
       <section class="flip-card-animations">
         <h2 class="button-background-header">Flip Card Animations</h2>
@@ -24,7 +64,7 @@
                 <h2>Rotate Y</h2>
               </div>
               <div class="back-face back-face-y-left">
-                <h2>Test</h2>
+                <h2>Hello!</h2>
               </div>
             </div>
           </div>
@@ -34,41 +74,41 @@
                 <h2>Rotate X</h2>
               </div>
               <div class="back-face back-face-x-left">
-                <h2>Back Face Test</h2>
+                <h2>Hello!</h2>
               </div>
             </div>
           </div>
           <div class="flip-card-container">
             <div class="flip-card flip-card-z-left">
               <div class="front-face">
-                <h2>Rotate Z</h2>
+                <h2>Hello!</h2>
               </div>
             </div>
           </div>
           <div class="flip-card-container">
             <div class="flip-card flip-card-y-right">
               <div class="front-face">
-                <h2>Rotate Y</h2>
+                <h2>Rotate -Y</h2>
               </div>
               <div class="back-face back-face-y-right">
-                <h2>Back Face Test</h2>
+                <h2>Hello!</h2>
               </div>
             </div>
           </div>
           <div class="flip-card-container">
             <div class="flip-card flip-card-x-right">
               <div class="front-face">
-                <h2>Rotate X</h2>
+                <h2>Rotate -X</h2>
               </div>
               <div class="back-face back-face-x-right">
-                <h2>Back Face Test</h2>
+                <h2>Hello!</h2>
               </div>
             </div>
           </div>
           <div class="flip-card-container">
             <div class="flip-card flip-card-z-right">
               <div class="front-face">
-                <h2>Rotate Z</h2>
+                <h2>Rotate -Z</h2>
               </div>
             </div>
           </div>
@@ -84,6 +124,23 @@
         <button class="bottom-to-top">Bottom to Top</button>
       </div>
     </section>
+    <section class="image-overlay-animations">
+      <h2 class="image-overlay-header">Image Animations</h2>
+      <div class="img-grid">
+            <div class="nature-pic">
+              <img src="src/images/beautiful_pic.jpg" alt="nature picture">
+              <div class="nature-pic-hover">Hello World</div>
+            </div>
+            <div class="temple-pic-container">
+              <img src="src/images/georgian.jpg" alt="temple pic" class="temple-pic">
+              <div class="temple-pic-hover">Hello World!!</div>
+            </div>
+            <img src="src/images/flower.jpg" alt="flower" class="flower-pic">
+          </div>
+      <!-- <div class="spotlight-img-container">
+            <img src="src/images/colorful-art.jpg" alt="Canvas Colorful Art" class="spotlight-img">
+          </div> -->
+    </section>
     <section class="tile-tilt-animations">
       <!-- Tilt Animation created with the help of: -->
       <!-- https://css-tricks.com/animate-a-container-on-mouse-over-using-perspective-and-transform/ -->
@@ -96,35 +153,7 @@
         </div>
       </div>
     </section>
-    <section class="image-overlay-animations">
-      <h2 class="image-overlay-header">Image Animations</h2>
-      <div class="img-grid">
-        <div class="nature-pic">
-          <img src="src/images/beautiful_pic.jpg" alt="nature picture">
-          <div class="nature-pic-hover">Hello World</div>
-        </div>
-        <div class="temple-pic-container">
-          <img src="src/images/georgian.jpg" alt="temple pic" class="temple-pic">
-          <div class="temple-pic-hover">Hello World!!</div>
-        </div>
-        <img src="src/images/flower.jpg" alt="flower" class="flower-pic">
-      </div>
-      <!-- <div class="spotlight-img-container">
-        <img src="src/images/colorful-art.jpg" alt="Canvas Colorful Art" class="spotlight-img">
-      </div> -->
-    </section>
-    <section class="text-animations">
-        <h2 class="text-header">Text Animations</h2>
-        <div class="static-words">Hello</div>
-        <div class="rotating-words">
-          <span>World!</span>
-          <span>Planet!</span>
-          <span>Earth!</span>
-          <span>Globe!</span>
-          <span>Universe!</span>
-        </div>
-    </section>
-
+  
     <script src="./dist/main.js"></script>
   </body>
 </html>

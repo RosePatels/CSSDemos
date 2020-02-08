@@ -48,7 +48,7 @@
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
-    background: blue;
+    background:  linear-gradient(to right, #1cdaca, #38ef7d);
     border-radius: 5px;
     padding: 10px;
     display: flex;
@@ -61,6 +61,11 @@
     font-weight: 500;
     color: #272932;
     letter-spacing: 1px;
+}
+
+.back-face h2 {
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 25px;
 }
 
 .flip-card-container:hover .flip-card-y-left, .back-face-y-left{

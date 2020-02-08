@@ -44,4 +44,52 @@ window.addEventListener("DOMContentLoaded", () => {
 
     // spotlightImg.addEventListener('mousemove', spotlight);
 
+    // let rotation = document.getElementsByClassName('rotate-word');
+    // for(let i = 0; i < rotation.length; i++){
+    //     rotation[i].classList.add('rotate-word-animation')
+    // }
+
+
+    //typewriter text animation
+    //Created with the help of Traversy Media: https://www.youtube.com/watch?v=POX3dT-pB4E
+    let testing = document.getElementById('typewriter');
+    let words = ["World!", "Planet!", "Globe!", "Earth!", "Galaxy!", "Universe!"];
+    let wordsIndex = 0;
+    let wordIdx = 0;
+    let insertStr = "";
+    let removeWord = false;
+    let timer = 500;
+
+    function typewriter(){
+        let actualWordIdx = wordsIndex % words.length;
+
+        if (removeWord){
+            timer = 100;
+            insertStr = insertStr.slice(0, insertStr.length - 1);
+            if(insertStr.length === 0){
+                removeWord = false;
+                timer = 500;
+            }
+        }
+        else{
+            if (insertStr.length === words[actualWordIdx].length){
+                wordsIndex += 1;
+                wordIdx = 0;
+                removeWord = true;
+                timer = 2000;
+            } else {
+                insertStr += words[actualWordIdx][wordIdx];
+                wordIdx += 1;
+                timer = 500;
+            }
+        }     
+
+        testing.innerHTML = insertStr;
+
+        setTimeout(() => typewriter(), timer);
+    }
+
+    typewriter();
+
 });
+
