@@ -12,26 +12,26 @@ window.addEventListener("DOMContentLoaded", () => {
     let tileContainer = document.querySelector('.tile-tilt-container');
     let tileTiltCard = document.querySelector('.tile-tilt');
 
-    // function tilt(event){
+    function tilt(event){
 
-    //     let offsetXReset = event.offsetX - 425;
-    //     let offsetYReset = event.offsetY - 200;
-    //     let xgap = ((offsetXReset)/ tileContainer.offsetWidth);
-    //     let ygap = ((offsetYReset)/ tileContainer.offsetHeight);
+        let offsetXReset = event.offsetX - 425;
+        let offsetYReset = event.offsetY - 200;
+        let xgap = ((offsetXReset)/ tileContainer.offsetWidth);
+        let ygap = ((offsetYReset)/ tileContainer.offsetHeight);
 
-    //     if (offsetXReset >= 0 && offsetYReset <= 0){
-    //         tileTiltCard.style.transform = `rotateX(${-xgap}deg) rotateY(${ygap}deg)`;
-    //     } else if (offsetXReset <= 0 && offsetYReset <= 0){
-    //         tileTiltCard.style.transform = `rotateX(${xgap}deg) rotateY(${-ygap}deg)`;
-    //     } else if (offsetXReset <= 0 && offsetYReset >= 0){
-    //         tileTiltCard.style.transform = `rotateX(${-xgap}deg) rotateY(${ygap}deg)`;
-    //     } else if (offsetXReset >= 0 && offsetYReset >= 0){
-    //         tileTiltCard.style.transform = `rotateX(${xgap}deg) rotateY(${-ygap}deg)`;
-    //     }
+        if (offsetXReset >= 0 && offsetYReset <= 0){
+            tileTiltCard.style.transform = `rotateX(${-xgap}deg) rotateY(${ygap}deg)`;
+        } else if (offsetXReset <= 0 && offsetYReset <= 0){
+            tileTiltCard.style.transform = `rotateX(${xgap}deg) rotateY(${-ygap}deg)`;
+        } else if (offsetXReset <= 0 && offsetYReset >= 0){
+            tileTiltCard.style.transform = `rotateX(${-xgap}deg) rotateY(${ygap}deg)`;
+        } else if (offsetXReset >= 0 && offsetYReset >= 0){
+            tileTiltCard.style.transform = `rotateX(${xgap}deg) rotateY(${-ygap}deg)`;
+        }
 
 
-    // }
-    // tileContainer.addEventListener('mousemove', tilt);
+    }
+    tileContainer.addEventListener('mousemove', tilt);
 
     //img spotlight cursor animation
 
