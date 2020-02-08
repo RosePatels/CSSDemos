@@ -52,7 +52,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     //typewriter text animation
     //Created with the help of Traversy Media: https://www.youtube.com/watch?v=POX3dT-pB4E
-    let testing = document.getElementById('testing');
+    let testing = document.getElementById('typewriter');
     let words = ["World!", "Planet!", "Globe!", "Earth!", "Galaxy!", "Universe!"];
     let wordsIndex = 0;
     let wordIdx = 0;

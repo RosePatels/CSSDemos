@@ -55,4 +55,23 @@ nav{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 10px 20px;
+}
+
+.navbar-portfolio-links a {
+  color: #f1f2eb;
+  text-decoration: none;
+
+}
+
+.navbar-portfolio-links a:hover {
+  color: #afffc7;
+}
+
+
+.intro-cssdemos{
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 70px;
+    line-height: 1.5;
 }

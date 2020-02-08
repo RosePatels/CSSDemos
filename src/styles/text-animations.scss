@@ -2,7 +2,12 @@
     padding: 20px;
     width: 1000px;
     margin: 0 auto;
-    padding-bottom: 200px;
+}
+
+.text-animations-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
 }
 
 .text-header {
@@ -14,6 +19,21 @@
     font-size: 20px;
 }
 
+.typewriter-static {
+    font-size: 40px;
+    display: flex;
+    padding-left: 20px;
+}
+
+#typewriter {
+    padding-left: 10px;
+    border-right: 1px solid black;
+    background: linear-gradient(to left, #ff00cc, #333399);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Raleway', sans-serif;
+}
+
 .rotating-words-animation {
     margin: 0 auto;
     display: flex;
@@ -23,7 +43,7 @@
 
 .static-words {
     display: inline;
-    padding-right: 5px;
+    padding-right: 10px;
     font-size: 40px;
 }
 
