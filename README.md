@@ -3,8 +3,12 @@
 ## Overview
 CSSDemos is a collection of CSS and JavaScript animations that are fun for the user to interact with. The purpose of this site is to demonstrate a knowledge of the interaction between CSS and JavaScript via animations. 
 
+![CSS Demos Site](intro.jpg)
+
+[Live Link](https://shreepatel95.github.io/CSSDemos/)
+
 ## Functionality
-Each demo will have a button that a user can click on to see the code that was used to create the demo. The user can copy that code and use it in their own site.
+Each demo will use pure CSS or CSS and JS animations. The user can interact with most animations with mouse hovers.
 
 ## MVPs
 * Button Background Animations - When a user hovers over a collection of four buttons:
