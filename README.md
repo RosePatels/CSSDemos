@@ -3,7 +3,7 @@
 ## Overview
 CSSDemos is a collection of CSS and JavaScript animations that are fun for the user to interact with. The purpose of this site is to demonstrate a knowledge of the interaction between CSS and JavaScript via animations. 
 
-![CSS Demos Site](intro.jpg)
+![CSS Demos Site](intro.png)
 
 [Live Link](https://shreepatel95.github.io/CSSDemos/)
 
